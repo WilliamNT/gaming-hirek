@@ -12,4 +12,4 @@ Ha még nem használtál pip-et, [itt](https://packaging.python.org/tutorials/in
 - Hogyha publikus módon szeretnéd az oldalt üzemeltetni, [ide](https://flask.palletsprojects.com/en/2.0.x/deploying/index.html) kattintva megtudhatod hogyan kell.
 
 # Egyéb felhasznált csomagok
-A fejlesztés felgyorsítása érdekében Bootstrap 5.1.1-et, Masonry 4.2.2-őt illetve Font Awesome 6.0 (béta 2)-őt használtam. Ezeket az egyszerűség kedvéért külső CDN-ről importáltam be.
+A fejlesztés felgyorsítása érdekében Bootstrap 5.1.1-et, Masonry 4.2.2-őt, Google Fonts-ot illetve Font Awesome 6.0 (béta 2)-őt használtam. Ezeket az egyszerűség kedvéért külső CDN-ről importáltam be.
