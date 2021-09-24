@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-primary: #242424;
+    --bg-secondary: #2B2B2B;
+    --bg-tertiary: #333333;
+    --accent: #f700ff;
+    --accent-darker: #b504bb;
+    --accent-secondary: #e8ec00;
+
+    --text: #fff;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+}
+
+a, .nav-link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover, a:focus, .nav-link:hover, .nav-link:focus {
+    color: var(--accent-darker);
+}
+
+.btn, .navbar-toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--text);
+    border: solid 1px var(--bg-tertiary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--accent-darker);
+    color: var(--text);
+}
+
+.navbar-toggler {
+    color: var(--accent);
+}
+
+.navbar-toggler:hover {
+    color: var(--accent-darker);
+}
+
+.navbar, footer {
+    background-color: var(--bg-secondary);
+}
+
+.category-title-parent {
+    text-transform: uppercase;
+    background-color: var(--accent);
+}
+
+.category-title {
+    background-color: var(--bg-primary);
+    position: relative; 
+    display: inline;
+    font-family: 'Audiowide', sans-serif;
+    color: var(--text);
+}
+
+.category-icon {
+    background-color: var(--bg-primary);
+    float: right;
+    color: var(--text);
+}
+
+.card {
+    border-radius: 0px;
+    background-color: var(--bg-secondary);
+    color: var(--text);
+    border: solid 1px var(--bg-tertiary);
+    transition: linear .25s;
+}
+
+.card-footer, .card-header {
+    background-color: var(--bg-tertiary);
+    border-radius: 0px;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.text-accent-secondary {
+    color: var(--accent-secondary);
+}
+
+.warning-icon {
+    font-size: 4rem;
+}
+
+footer {
+    color: var(--text);
+}
+
+.card:hover {
+    background-color: var(--bg-tertiary);
+}

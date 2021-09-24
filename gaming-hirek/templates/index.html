@@ -1,0 +1,56 @@
+{% extends "skeleton/base.html" %}
+{% block title %}Gaming Hírek{% endblock %}
+
+{% block page %}
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a href="{{ url_for('home') }}" class="navbar-brand text-white">
+            <i class="fa-solid fa-newspaper"></i> Gaming Hírek
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="nav-link"><i class="fa-solid fa-house"></i> Főoldal</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="container">
+    <div class="category-title-parent px-2 my-4">
+        <h1 class="category-title px-2">Hírek</h1>
+        <h1 class="category-icon px-2"><i class="fas fa-gamepad"></i></h1>
+    </div>
+    <div data-masonry='{"percentPosition": true }' class="row">
+        {% for article in news %}
+        <div class="col-sm-3">
+            <a href="{{ article.url }}">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-accent-secondary">{{ article.title }}</h4>
+                        <p class="card-text text-white">
+                            {{ article.description }}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text text-accent">{{ article.publisher.title }} <span
+                                class="text-muted">&bullet;</span> <a href="{{ article.url }}" class="btn btn-primary btn-sm m-0"><i
+                                    class="fa-solid fa-eye"></i> Elolvasom</a></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+        {% if not news %}
+            {% include "common/data-load-fail.html" %}
+        {% endif %}
+    </div>
+</main>
+<footer class="container-fluid">
+    <div class="container p-3">
+        <p class="mb-0 text-center">&copy; 2021 Ide írd a neved</p>
+        <p class="mb-0 text-center"><a href="https://github.com/WilliamNT/gaming-hirek">Az oldalt készítette WilliamNT</a></p>
+    </div>
+</footer>
+{% endblock %}
