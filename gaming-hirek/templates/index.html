@@ -7,13 +7,9 @@
         <a href="{{ url_for('home') }}" class="navbar-brand text-white">
             <i class="fa-solid fa-newspaper"></i> Gaming Hírek
         </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav">
-                <a href="{{ url_for('home') }}" class="nav-link"><i class="fa-solid fa-house"></i> Főoldal</a>
-            </div>
+        <div class="ms-auto">
+            <p class="text-white text-center m-0">&copy; 2021 bdgz</p>
+            <p class="text-center m-0"><a href="https://skiby.net">Az oldalt készítette bdgz</a></p>
         </div>
     </div>
 </nav>
@@ -22,7 +18,7 @@
         <h1 class="category-title px-2">Hírek</h1>
         <h1 class="category-icon px-2"><i class="fas fa-gamepad"></i></h1>
     </div>
-    <div data-masonry='{"percentPosition": true }' class="row">
+    <div data-masonry='{"percentPosition": true }' class="row justify-content-center">
         {% for article in news %}
         <div class="col-sm-3">
             <a href="{{ article.url }}">
@@ -47,10 +43,4 @@
         {% endif %}
     </div>
 </main>
-<footer class="container-fluid">
-    <div class="container p-3">
-        <p class="mb-0 text-center">&copy; 2021 Ide írd a neved</p>
-        <p class="mb-0 text-center"><a href="https://github.com/WilliamNT/gaming-hirek">Az oldalt készítette WilliamNT</a></p>
-    </div>
-</footer>
 {% endblock %}
