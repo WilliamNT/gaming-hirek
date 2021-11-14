@@ -13,3 +13,6 @@ Ha még nem használtál pip-et, [itt](https://packaging.python.org/tutorials/in
 
 # Egyéb felhasznált csomagok
 A fejlesztés felgyorsítása érdekében Bootstrap 5.1.1-et, Masonry 4.2.2-őt, Google Fonts-ot illetve Font Awesome 6.0 (béta 2)-őt használtam. Ezeket az egyszerűség kedvéért külső CDN-ről importáltam be.
+
+# Demó
+Egy nyilvános demó elérhető a weboldalamon: https://gaming-hirek.skiby.net/
